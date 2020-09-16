@@ -132,17 +132,17 @@ public class App {
                     indice.salvarPos(aux.RG, pos);
                     contador++;
                 }
-                indice.setQtdRegistros(contador);
+                
                 
                 System.out.println("\nIndice criado com sucesso!! Prescione <enter> para continuar...");
                 
             }catch(EOFException ex){
                 aux = null; fimDeArquivo = true;
             }
-            teclado.nextLine();
+            indice.setQtdRegistros(contador);
         }else {
             System.out.println("\n\nO indice já existe!!!!!!!!!!");
-            teclado.nextLine();
+            
             
         }
        
